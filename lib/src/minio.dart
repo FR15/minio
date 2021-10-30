@@ -37,7 +37,7 @@ class Minio {
   }
 
   /// default part size for multipart uploads.
-  final partSize = 64 * 1024 * 1024;
+  final partSize = 1024 * 1024 * 1024;
 
   final MinioWay minioWay;
 

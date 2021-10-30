@@ -91,9 +91,6 @@ class MinioClient {
 
     final date = DateTime.now().toUtc();
     if (minio.minioWay == MinioWay.OSS) {
-
-      print("------sss ${makeDateLong(date)}");
-
       request.headers['date'] = makeDateLong(date);
       _signRequest(request);
     } else {
